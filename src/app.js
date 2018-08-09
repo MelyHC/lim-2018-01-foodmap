@@ -1,10 +1,14 @@
-const spacePlace = document.getElementById('splash');
+const splashTime = document.getElementById('splash');
 const mapDetails = document.getElementById('map-details');
-const infoMap = document.getElementById('info-map')
+const googleMap = document.getElementById("google-map");
+const infoMap = document.getElementById('info-map');
+const typeFood = document.getElementById('type-food');
+const district = document.getElementById('district');
+const searchRest = document.getElementById('search-rest')
 
 window.setTimeout(() => {
-  spacePlace.setAttribute('class', 'w3-hide');
-  mapDetails.setAttribute('class', 'w3-show');
+  splashTime.setAttribute('class', 'w3-hide');
+  mapDetails.setAttribute('class', 'w3-show w3-light-grey');
 }, 2000);
 
 let map;
@@ -23,7 +27,7 @@ window.onload = () => {
       zoom: 15,
     };
 
-    map = new google.maps.Map(document.getElementById("mapa"), mapOptions);
+    map = new google.maps.Map(googleMap, mapOptions);
 
     // Creamos el infowindow
     // infowindow = new google.maps.InfoWindow();
@@ -49,25 +53,53 @@ window.onload = () => {
   });
 }
 
-fetch('../data-restaurant/restaurants.json')
-  .then(response => response.json())
-  .then(arrRestaurants => {
-    arrRestaurants.forEach(placeRestaurant => {
-      infoMap.innerHTML +=
-        `<div id="info-restaurant" class="w3-card w3-margin" onclick="document.getElementById('${placeRestaurant.name}').style.display='block'">${placeRestaurant.name}</div>
-      <div id="${placeRestaurant.name}" class="w3-modal">
+const optionsFilter = {
+  restaurants: null,
+  addres: '',
+  name: '',
+  type: ''
+}
+
+const printRestaurant = (arrRestaurant) => {
+  let output = '';
+  arrRestaurant.forEach(restaurant => {
+    output +=
+      `<div id="info-restaurant" class="w3-card w3-margin w3-white" onclick="document.getElementById('${restaurant.name}').style.display='block'">
+      <img class="w3-image" href="${restaurant.photo}" alt="Plato" width="30%" height="30%">${restaurant.name}</div>
+      <div id="${restaurant.name}" class="w3-modal">
         <div class="w3-modal-content">
           <div class="w3-container">
-            <span onclick="document.getElementById('${placeRestaurant.name}').style.display='none'" class="w3-button w3-display-topright">&times;</span>
-            <h3>${placeRestaurant.name}</h3>
-            <p>Dirección: ${placeRestaurant.addres} <br> 
-            Puntuación: ${placeRestaurant.puntuación}★</p>
+            <span onclick="document.getElementById('${restaurant.name}').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+            <h3>${restaurant.name}</h3>
+            <p>Dirección: ${restaurant.addres} <br> 
+            Puntuación: ${restaurant.puntuación}★</p>
           </div>
         </div>
-      </div>`
-    });
+      </div>`;
+     console.log(restaurant.photo) 
+  });
+  return output;
+}
+
+fetch('../data-restaurant/restaurants.json')
+  .then(response => response.json())
+  .then(arrRest => {
+    optionsFilter.restaurants = arrRest;
+    infoMap.innerHTML = printRestaurant(arrRest)
   })
   .catch(error => console.log(error))
+
+typeFood.addEventListener('change', () => {
+  optionsFilter.type = typeFood.value;
+})
+
+district.addEventListener('change', () => {
+  optionsFilter.addres = district.value;
+})
+
+searchRest.addEventListener('keyup', () => {
+  optionsFilter.name = searchRest.value;
+})
 
 // function crearMarcador(place) {
 //   // Creamos un marcador
