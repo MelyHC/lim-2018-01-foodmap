@@ -8,8 +8,8 @@ body {
 }
 
 #mapa {
-  height: 50%;
-  width: 50%;
+  height: 350px;
+  /* width: 50%; */
   background: grey;
   border-radius: 2%;
 }
