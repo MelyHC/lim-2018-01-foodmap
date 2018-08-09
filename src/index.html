@@ -1,14 +1,32 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>FoodMap</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css">
+    <script type="text/javascript" src="https://maps.google.com/maps/api/js?libraries=places"></script>
   </head>
   <body>
-
+    <section id="splash" class="w3-black space-place">
+      <h1 class="w3-display-middle w3-text-red">Foodmap</h1>
+    </section>
+    <section class="w3-hide" id="map-details">
+      <header class="w3-container w3-black">
+        <h1 class="w3-text-red">Foodmap</h1>
+      </header>
+      <div class="w3-container">
+        <select id="filter-for">
+          <option value=""></option>
+          <option value=""></option>
+        </select>
+        <div id="info-map"></div>
+        <div class="w3-display-right w3-margin-right" id="mapa"></div>
+      </div>
+    </section>
     <script src="app.js"></script>
   </body>
 </html>
