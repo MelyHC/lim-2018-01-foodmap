@@ -2,12 +2,11 @@ body {
   height: 100%;
 }
 
-.space-place {
-  width: 100%;
-  height: 100%;
+#splash {
+  background-color: black;
 }
 
-#mapa {
+#google-map {
   height: 350px;
   /* width: 50%; */
   background: grey;
