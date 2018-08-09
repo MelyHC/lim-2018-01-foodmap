@@ -1,9 +1,10 @@
 const spacePlace = document.getElementById('splash');
 const mapDetails = document.getElementById('map-details');
+const infoMap = document.getElementById('info-map')
 
 window.setTimeout(() => {
   spacePlace.setAttribute('class', 'w3-hide');
-  mapDetails.setAttribute('class', 'w3-show space-place');
+  mapDetails.setAttribute('class', 'w3-show');
 }, 2000);
 
 let map;
@@ -47,6 +48,26 @@ window.onload = () => {
     // });
   });
 }
+
+fetch('../data-restaurant/restaurants.json')
+  .then(response => response.json())
+  .then(arrRestaurants => {
+    arrRestaurants.forEach(placeRestaurant => {
+      infoMap.innerHTML +=
+        `<div id="info-restaurant" class="w3-card w3-margin" onclick="document.getElementById('${placeRestaurant.name}').style.display='block'">${placeRestaurant.name}</div>
+      <div id="${placeRestaurant.name}" class="w3-modal">
+        <div class="w3-modal-content">
+          <div class="w3-container">
+            <span onclick="document.getElementById('${placeRestaurant.name}').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+            <h3>${placeRestaurant.name}</h3>
+            <p>Dirección: ${placeRestaurant.addres} <br> 
+            Puntuación: ${placeRestaurant.puntuación}★</p>
+          </div>
+        </div>
+      </div>`
+    });
+  })
+  .catch(error => console.log(error))
 
 // function crearMarcador(place) {
 //   // Creamos un marcador
