@@ -1,14 +1,12 @@
 window.districtRest = (rest, district) => {
   let restDistrict = rest;
-  district = district.toLowerCase();
   restDistrict = rest.filter(restAddres => restAddres.addres.toLowerCase().indexOf(district) >= 0)
   return restDistrict;
 }
 
 window.typeRest = (rest, typeFood) => {
   let foodTypeRest = rest;
-  typeFood = typeFood.toLowerCase();
-  foodTypeRest = rest.filter(restType => restType.type.toLowerCase().indexOf(typeFood) >= 0)
+  foodTypeRest = rest.filter(restType => restType.type.indexOf(typeFood) >= 0)
   return foodTypeRest;
 }
 
