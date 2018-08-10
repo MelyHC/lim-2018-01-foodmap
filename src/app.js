@@ -64,8 +64,8 @@ const printRestaurant = (arrRestaurant) => {
   let output = '';
   arrRestaurant.forEach(restaurant => {
     output +=
-      `<div id="info-restaurant" class="w3-card w3-margin w3-white" onclick="document.getElementById('${restaurant.name}').style.display='block'">
-      <img class="w3-image" href="${restaurant.photo}" alt="Plato" width="30%" height="30%">${restaurant.name}</div>
+      `<div id="info-restaurant" class="w3-margin w3-white w3-third w3-center" onclick="document.getElementById('${restaurant.name}').style.display='block'">
+      <span>${restaurant.name}</span><br><img class="w3-image w3-margin" src="${restaurant.photo}" alt="Plato"></div>
       <div id="${restaurant.name}" class="w3-modal">
         <div class="w3-modal-content">
           <div class="w3-container">
@@ -91,14 +91,17 @@ fetch('../data-restaurant/restaurants.json')
 
 typeFood.addEventListener('change', () => {
   optionsFilter.type = typeFood.value;
+  infoMap.innerHTML = printRestaurant(selecRest(optionsFilter));
 })
 
 district.addEventListener('change', () => {
   optionsFilter.addres = district.value;
+  infoMap.innerHTML = printRestaurant(selecRest(optionsFilter));
 })
 
 searchRest.addEventListener('keyup', () => {
   optionsFilter.name = searchRest.value;
+  infoMap.innerHTML = printRestaurant(selecRest(optionsFilter));
 })
 
 // function crearMarcador(place) {

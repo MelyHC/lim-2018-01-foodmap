@@ -173,7 +173,7 @@
     "puntuación": 4.4,
     "addres": "Av 28 de Julio 795, Miraflores 15074",
     "type": "Parrillas",
-    "photo": "https://www.google.com/maps/place/El+Parrill%C3%B3n+de+Pablo+Profumo/@-12.128127,-77.026109,3a,75y,90t/data=!3m8!1e2!3m6!1sAF1QipNaP379m6DEzzhxMEAdRQilWJA7-8ggunVj0jaq!2e10!3e12!6shttps:%2F%2Flh5.googleusercontent.com%2Fp%2FAF1QipNaP379m6DEzzhxMEAdRQilWJA7-8ggunVj0jaq%3Dw129-h86-k-no!7i720!8i480!4m5!3m4!1s0x9105c81db873a7cf:0x7b5eaed2252e0db3!8m2!3d-12.128127!4d-77.026109#"
+    "photo": "https://lh5.googleusercontent.com/p/AF1QipNaP379m6DEzzhxMEAdRQilWJA7-8ggunVj0jaq=w408-h272-k-no"
   },
   {
     "name": "Restaurante Costa Sur",
@@ -184,7 +184,7 @@
     "puntuación": 4.4,
     "addres": "Av. Chorrillos 292, Distrito de Chorrillos 15063",
     "type": "Mariscos",
-    "photo": "https://www.google.com/maps/place/Restaurante+Costa+Sur/@-12.1579825,-77.0232383,3a,75y,90t/data=!3m8!1e2!3m6!1sAF1QipMFrvkfWJaNeUycSbBPv-bXnJf8x8B62GUY5GVf!2e10!3e12!6shttps:%2F%2Flh5.googleusercontent.com%2Fp%2FAF1QipMFrvkfWJaNeUycSbBPv-bXnJf8x8B62GUY5GVf%3Dw129-h86-k-no!7i5184!8i3456!4m8!1m2!2m1!1srestaurantes+chorrillos!3m4!1s0x9105b7921789d525:0x3094431fe9f112d8!8m2!3d-12.1579825!4d-77.0232383#"
+    "photo": "https://lh5.googleusercontent.com/p/AF1QipMFrvkfWJaNeUycSbBPv-bXnJf8x8B62GUY5GVf=w408-h272-k-no"
   },
   {
     "name": "Restaurant SONIA",
@@ -195,7 +195,7 @@
     "puntuación": 4.3,
     "addres": "La Rosa Lozano Y Tirado 173, Distrito de Chorrillos 15064",
     "type": "Mariscos",
-    "photo": "https://www.google.com/maps/place/Restaurant+SONIA/@-12.1680969,-77.0310224,3a,75y,90t/data=!3m8!1e2!3m6!1sAF1QipMGlKRDV7nLAZ3QNGg33nyXpWpF4ts49DkC9cqu!2e10!3e12!6shttps:%2F%2Flh5.googleusercontent.com%2Fp%2FAF1QipMGlKRDV7nLAZ3QNGg33nyXpWpF4ts49DkC9cqu%3Dw114-h86-k-no!7i4160!8i3120!4m8!1m2!2m1!1srestaurantes+chorrillos!3m4!1s0x9105b798c65b1901:0x9caf272c2de07a2a!8m2!3d-12.1680969!4d-77.0310224#"
+    "photo": "https://lh5.googleusercontent.com/p/AF1QipMGlKRDV7nLAZ3QNGg33nyXpWpF4ts49DkC9cqu=w408-h306-k-no"
   },
   {
     "name": "La Paradita",
@@ -206,6 +206,50 @@
     "puntuación": 4.5,
     "addres": "Ca. Carlos Alcorta 297, Chorrillos, Lima 15064",
     "type": "Mariscos, criolla",
-    "photo": "https://www.google.com/maps/place/La+Paradita/@-12.166798,-77.0215057,3a,75y,90t/data=!3m8!1e2!3m6!1s5s2f2cCZlYp5jOc2rVVM1p3uViVRpq__rYz0oI_CDAUzDtZsk4psXVqjfbmZl0oj!2e9!3e27!6s%2F%2Flh4.googleusercontent.com%2F5s2f2cCZlYp5jOc2rVVM1p3uViVRpq__rYz0oI_CDAUzDtZsk4psXVqjfbmZl0oj%3Dw114-h86-k-no!7i4128!8i3096!4m8!1m2!2m1!1srestaurantes+chorrillos!3m4!1s0x0:0x6049e4a8a78f4389!8m2!3d-12.1667993!4d-77.0215094#"
+    "photo": "https://lh4.googleusercontent.com/5s2f2cCZlYp5jOc2rVVM1p3uViVRpq__rYz0oI_CDAUzDtZsk4psXVqjfbmZl0oj=w408-h306-k-no"
+  },
+  {
+    "name": "Sarcletti Chacarilla",
+    "coordinates":{
+      "lat": -12.1129028,
+      "lng": -77.0087481
+    },
+    "puntuación": 4.2,
+    "addres": "Jirón Monterrey 239, Santiago de Surco 15038",
+    "type": "Café",
+    "photo": "https://lh5.googleusercontent.com/p/AF1QipO5tzePJuhzSh_4ew-hB7YZ_DB7HKuairGmx7am=w408-h306-k-no"
+  },
+  {
+    "name": "Los Calamares",
+    "coordinates":{
+      "lat": 0,
+      "lng": 0
+    },
+    "puntuación": 4.2,
+    "addres": "Av. República de Panamá 6611, Santiago de Surco 15048",
+    "type": "Mariscos",
+    "photo": "https://lh5.googleusercontent.com/p/AF1QipNHNMm57OUeSLtBeLZFMWv6I7hSeKKgSEOBzSPK=w408-h544-k-no"
+  },
+  {
+    "name": "Restaurante Revolucion Marina",
+    "coordinates":{
+      "lat": 0,
+      "lng": 0
+    },
+    "puntuación": 4.7,
+    "addres": "Barranco, Jr. Venegas 261, Cercado de Lima 15049",
+    "type": "Mariscos",
+    "photo": "https://lh5.googleusercontent.com/p/AF1QipM9lDw84wSy8LWgn91KA7LJRv_ft9C97nPBKdzq=w408-h306-k-no"
+  },
+  {
+    "name": "La Tostadora",
+    "coordinates":{
+      "lat": 0,
+      "lng": 0
+    },
+    "puntuación": 0,
+    "addres": "Jr. Domeyer 132 Barranco, Lima LIMA 04",
+    "type": "Café",
+    "photo": "https://lh5.googleusercontent.com/p/AF1QipPQ_-YQ8MU2uP3raMdrSm-6V-gRpOdlyOCnzCcj=w408-h306-k-no"
   }
 ]

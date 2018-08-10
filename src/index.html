@@ -22,14 +22,16 @@
         </div>
       </header>
       <div class="w3-container">
-        <select id="type-food">
+        <select class="w3-margin" id="type-food">
           <option disabled selected hidden>Tipo de comida</option>
           <option value="criolla">Criolla</option>
           <option value="mariscos">Marina</option>
           <option value="vegetariana">Vegetariana</option>
+          <option value="parrillas">Parrillas</option>
+          <option value="oriental">Oriental</option>
           <option value="café">Postre, café, snacks, etc.</option>
         </select>
-        <select id="district">
+        <select class="w3-margin" id="district">
           <option disabled selected hidden>Distrito</option>
           <option value="barranco">Barranco</option>
           <option value="miraflores">Miraflores</option>
@@ -37,7 +39,9 @@
           <option value="surco">Surco</option>
         </select>
         <div class="w3-row">
-          <div class="w3-twothird" id="info-map"></div>
+          <div class="w3-twothird">
+            <div class="w3-row" id="info-map"></div>
+          </div>
           <div class="w3-third" id="google-map"></div>
         </div>
       </div>

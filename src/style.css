@@ -12,3 +12,7 @@ body {
   background: grey;
   border-radius: 2%;
 }
+
+img {
+  width: 80%;
+}
