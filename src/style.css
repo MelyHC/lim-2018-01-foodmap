@@ -1,18 +1,30 @@
-body {
-  height: 100%;
-}
-
 #splash {
   background-color: black;
 }
 
 #google-map {
-  height: 350px;
-  /* width: 50%; */
+  height: 500px;
   background: grey;
-  border-radius: 2%;
 }
 
 img {
   width: 80%;
+}
+
+.w3-select {
+  width: initial;
+}
+
+@media screen and (max-width: 798px) {
+
+  #google-map {
+    height: 380px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+
+  #google-map {
+    height: 220px;
+  }
 }

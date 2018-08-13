@@ -3,26 +3,26 @@
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>FoodMap</title>
+    <title>Find Rest</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" rel="stylesheet" href="style.css">
-    <script type="text/javascript" src="https://maps.google.com/maps/api/js?libraries=places"></script>
+    <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <section id="splash" class="w3-black">
-      <h1 class="w3-display-middle w3-text-red">Foodmap</h1>
+    <section id="splash" class="w3-diplay-container w3-black">
+      <h1 class="w3-display-middle w3-text-red">Find Rest</h1>
     </section>
     <section class="w3-hide" id="map-details">
       <header class="w3-container w3-black">
-        <h1 class="w3-text-red">Foodmap</h1>
+        <h1 class="w3-text-red">Find Rest</h1>
         <div>
-          <i class="fa fa-search"></i><input class="w3-margin" id="search-rest" type="text" placeholder="Buscar por nombre">
+          <i class="fa fa-search"></i>
+          <input class="w3-margin" id="search-rest" type="text" placeholder="Buscar por nombre">
         </div>
       </header>
-      <div class="w3-container">
-        <select class="w3-margin" id="type-food">
+      <div>
+        <select class="w3-margin w3-select w3-light-grey w3-border" id="type-food">
           <option disabled selected hidden>Tipo de comida</option>
           <option value="criolla">Criolla</option>
           <option value="mariscos">Marina</option>
@@ -31,7 +31,7 @@
           <option value="oriental">Oriental</option>
           <option value="café">Postre, café, snacks, etc.</option>
         </select>
-        <select class="w3-margin" id="district">
+        <select class="w3-margin w3-select w3-light-grey w3-border" id="district">
           <option disabled selected hidden>Distrito</option>
           <option value="barranco">Barranco</option>
           <option value="miraflores">Miraflores</option>
@@ -42,10 +42,11 @@
           <div class="w3-twothird">
             <div class="w3-row" id="info-map"></div>
           </div>
-          <div class="w3-third" id="google-map"></div>
+          <div class="w3-third w3-light-grey" id="google-map"></div>
         </div>
       </div>
     </section>
+    <script src="https://maps.google.com/maps/api/js?libraries=places"></script>
     <script src="data-rest.js"></script>
     <script src="app.js"></script>
   </body>

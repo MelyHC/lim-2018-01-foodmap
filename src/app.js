@@ -8,7 +8,7 @@ const searchRest = document.getElementById('search-rest')
 
 window.setTimeout(() => {
   splashTime.setAttribute('class', 'w3-hide');
-  mapDetails.setAttribute('class', 'w3-show w3-light-grey');
+  mapDetails.setAttribute('class', 'w3-show');
 }, 2000);
 
 const optionsFilter = {
@@ -22,19 +22,22 @@ const printRestaurant = (arrRestaurant) => {
   let output = '';
   arrRestaurant.forEach(restaurant => {
     output +=
-      `<div id="info-restaurant" class="w3-margin w3-white w3-third w3-center" onclick="document.getElementById('${restaurant.name}').style.display='block'">
-      <span>${restaurant.name}</span><br><img class="w3-image w3-margin" src="${restaurant.photo}" alt="Plato"></div>
+    ` <div class="w3-half">
+        <div id="info-restaurant" class="w3-margin w3-light-grey w3-center" onclick="document.getElementById('${restaurant.name}').style.display='block'">
+          <h4>${restaurant.name}</h4>
+          <img class="w3-image w3-margin" src="${restaurant.photo}" alt="Plato">
+        </div>
+      </div>
       <div id="${restaurant.name}" class="w3-modal">
         <div class="w3-modal-content">
           <div class="w3-container">
             <span onclick="document.getElementById('${restaurant.name}').style.display='none'" class="w3-button w3-display-topright">&times;</span>
             <h3>${restaurant.name}</h3>
-            <p>Dirección: ${restaurant.addres} <br> 
-            Puntuación: ${restaurant.puntuación}★</p>
-          </div>
+            <p>Dirección: ${restaurant.addres} 
+            <br>Puntuación: ${restaurant.score}★</p>
+          </div>  
         </div>
       </div>`;
-    console.log(restaurant.photo)
   });
   return output;
 }
@@ -73,9 +76,9 @@ const createMarker = (place) => {
   });
 
   // Asignamos el evento click del marcador
-  google.maps.event.addListener(marker, 'click', function () {
+  google.maps.event.addListener(marker, 'click', () => {
     infowindow.setContent(place.name);
-    infowindow.open(map, this);
+    infowindow.open(map);
   });
 }
 
