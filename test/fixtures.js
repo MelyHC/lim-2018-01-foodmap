@@ -1,4 +1,4 @@
-[
+window.fixtures = [
   {
     "name": "LA Cabrera",
     "coordinates": {
@@ -210,7 +210,7 @@
   },
   {
     "name": "Sarcletti Chacarilla",
-    "coordinates":{
+    "coordinates": {
       "lat": -12.1129028,
       "lng": -77.0087481
     },
@@ -221,7 +221,7 @@
   },
   {
     "name": "Los Calamares",
-    "coordinates":{
+    "coordinates": {
       "lat": -12.1326596,
       "lng": -77.0177527
     },
@@ -232,7 +232,7 @@
   },
   {
     "name": "Restaurante Revolucion Marina",
-    "coordinates":{
+    "coordinates": {
       "lat": -12.1429574,
       "lng": -77.0138081
     },
@@ -243,7 +243,7 @@
   },
   {
     "name": "La Tostadora",
-    "coordinates":{
+    "coordinates": {
       "lat": -12.147618,
       "lng": -77.021821
     },
